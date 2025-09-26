@@ -4,14 +4,23 @@ you'll learn about it later. */
 
 body {
   margin: 0;
+  padding: 0;
   background: #eee;
   font-family: Besley, serif;
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  border: 2px solid black;
+  margin: 0;
+
+  p
 }
 
 .profile-image {
@@ -27,7 +36,28 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  border: 2px solid black;
 }
+.left-block {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: 2px solid black;
+}
+.right-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  gap: 16px;
+  margin: 0;
+  padding: 0;  
+  border: 2px solid black;
+}
+
+
 
 button {
   border: none;
@@ -41,6 +71,7 @@ a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  display: flex;
 }
 
 ul {
